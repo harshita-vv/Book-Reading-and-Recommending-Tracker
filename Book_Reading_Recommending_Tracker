@@ -1,0 +1,227 @@
+import tkinter as tk
+from tkinter import ttk, messagebox
+import pandas as pd
+
+# CONFIG
+DATA_FILE = r"C:\Users\Harshita\OneDrive\Desktop\Book Recommendation and Reading Tracker\book_reading_tracker.csv"
+
+# LOAD DATA 
+try:
+    df = pd.read_csv(DATA_FILE)
+except FileNotFoundError:
+    messagebox.showerror("Error", f"File {DATA_FILE} not found!")
+    df = pd.DataFrame(columns=["title", "author", "genre", "status"])
+
+# SAVE DATA
+def save_data():
+    df.to_csv(DATA_FILE, index=False)
+
+# UPDATE STATS
+def update_stats():
+    total = len(df)
+    read = len(df[df["status"] == "Read"])
+    to_read = len(df[df["status"] == "To Read"])
+    stats_label.config(text=f"Total: {total}   |   Read: {read}   |   To Read: {to_read}")
+
+# REFRESH TABLE 
+def refresh_table(data=None):
+    for i in tree.get_children():
+        tree.delete(i)
+    view_data = data if data is not None else df
+    for _, row in view_data.iterrows():
+        tree.insert("", "end", values=(row["title"], row["author"], row["genre"], row["status"]))
+    update_stats()
+
+# ADD BOOK 
+def add_book():
+    title = title_entry.get().strip()
+    author = author_entry.get().strip()
+    genre = genre_combo.get().strip()
+
+    if not title or not author or not genre:
+        messagebox.showwarning("Missing Info", "Please fill all fields!")
+        return
+
+    new_row = {"title": title, "author": author, "genre": genre, "status": "To Read"}
+
+    global df
+    df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+
+    save_data()
+    refresh_table()
+
+    title_entry.delete(0, tk.END)
+    author_entry.delete(0, tk.END)
+    genre_combo.set("")
+
+# UPDATE STATUS
+def update_status():
+    selected = tree.focus()
+    if not selected:
+        messagebox.showwarning("Select Book", "Please select a book!")
+        return
+
+    values = tree.item(selected, "values")
+    title = values[0]
+    new_status = status_combo.get()
+
+    if new_status not in ["To Read", "Read"]:
+        messagebox.showwarning("Invalid", "Select a valid status.")
+        return
+
+    global df
+    df.loc[df["title"] == title, "status"] = new_status
+
+    save_data()
+    refresh_table()
+
+# SEARCH BOOK
+def search_book():
+    query = search_entry.get().strip().lower()
+    if not query:
+        refresh_table()
+        return
+
+    filtered = df[df["title"].str.lower().str.contains(query)]
+    refresh_table(filtered)
+
+# SMART RECOMMENDATION
+def recommend_books():
+    if df.empty:
+        messagebox.showinfo("No Data", "No books available.")
+        return
+
+    read_books = df[df["status"] == "Read"]
+
+    if read_books.empty:
+        messagebox.showinfo("Not Enough Data", "Mark some books as 'Read' to get recommendations.")
+        return
+
+    top_genre = read_books["genre"].mode()[0]
+
+    filtered = df[(df["genre"] == top_genre) & (df["status"] == "To Read")]
+
+    if filtered.empty:
+        messagebox.showinfo("No Results", f"No unread books found in genre: {top_genre}")
+    else:
+        messagebox.showinfo("Recommendation", f"Recommended genre based on your reading: {top_genre}")
+
+    refresh_table(filtered)
+
+# UI SETUP
+root = tk.Tk()
+root.title("Book Reading Tracker")
+root.geometry("1000x650")
+root.configure(bg="#352F44")
+
+# STYLE
+style = ttk.Style()
+style.theme_use("default")
+
+style.configure("TCombobox",
+    fieldbackground="#B9B4C7",
+    background="#5C5470",
+    foreground="#352F44"
+)
+
+style.configure("Treeview",
+    background="#B9B4C7",
+    foreground="#352F44",
+    rowheight=28,
+    fieldbackground="#B9B4C7"
+)
+
+style.configure("Treeview.Heading",
+    background="#5C5470",
+    foreground="#FAF0E6",
+    font=("Segoe UI", 10, "bold")
+)
+
+style.map("Treeview",
+    background=[("selected", "#FAF0E6")],
+    foreground=[("selected", "#352F44")]
+)
+
+# TITLE
+tk.Label(root, text="Book Reading Tracker",
+         font=("Segoe UI", 22, "bold"),
+         bg="#352F44", fg="#FAF0E6").pack(pady=10)
+
+# STATS
+stats_label = tk.Label(root, text="",
+                       font=("Segoe UI", 12),
+                       bg="#352F44", fg="#FAF0E6")
+stats_label.pack(pady=5)
+
+# ADD FRAME
+add_frame = tk.Frame(root, bg="#5C5470", padx=10, pady=10)
+add_frame.pack(pady=10)
+
+tk.Label(add_frame, text="Title:", bg="#5C5470", fg="#FAF0E6").grid(row=0, column=0, padx=5)
+title_entry = tk.Entry(add_frame, width=25, bg="#B9B4C7", fg="#352F44")
+title_entry.grid(row=0, column=1, padx=5)
+
+tk.Label(add_frame, text="Author:", bg="#5C5470", fg="#FAF0E6").grid(row=0, column=2, padx=5)
+author_entry = tk.Entry(add_frame, width=25, bg="#B9B4C7", fg="#352F44")
+author_entry.grid(row=0, column=3, padx=5)
+
+tk.Label(add_frame, text="Genre:", bg="#5C5470", fg="#FAF0E6").grid(row=0, column=4, padx=5)
+genres = sorted(df["genre"].dropna().unique().tolist())
+genre_combo = ttk.Combobox(add_frame, values=genres, width=20, state="readonly")
+genre_combo.grid(row=0, column=5, padx=5)
+
+tk.Button(add_frame, text="Add Book",
+          bg="#FAF0E6", fg="#352F44",
+          font=("Segoe UI", 10, "bold"),
+          bd=0, command=add_book).grid(row=0, column=6, padx=10)
+
+# SEARCH FRAME
+search_frame = tk.Frame(root, bg="#5C5470", padx=10, pady=10)
+search_frame.pack(pady=5)
+
+tk.Label(search_frame, text="Search:", bg="#5C5470", fg="#FAF0E6").grid(row=0, column=0, padx=5)
+search_entry = tk.Entry(search_frame, width=30, bg="#B9B4C7", fg="#352F44")
+search_entry.grid(row=0, column=1, padx=5)
+
+tk.Button(search_frame, text="Search", command=search_book,
+          bg="#FAF0E6", fg="#352F44", bd=0).grid(row=0, column=2, padx=5)
+
+tk.Button(search_frame, text="Show All", command=lambda: refresh_table(),
+          bg="#FAF0E6", fg="#352F44", bd=0).grid(row=0, column=3, padx=5)
+
+tk.Button(search_frame, text="Smart Recommend", command=recommend_books,
+          bg="#FAF0E6", fg="#352F44", bd=0).grid(row=0, column=4, padx=10)
+
+# TREEVIEW
+tree_frame = tk.Frame(root, bg="#5C5470", padx=10, pady=10)
+tree_frame.pack(pady=10, expand=True, fill="both")
+
+columns = ("Title", "Author", "Genre", "Status")
+tree = ttk.Treeview(tree_frame, columns=columns, show="headings")
+
+for col in columns:
+    tree.heading(col, text=col)
+    tree.column(col, anchor="center", width=200)
+
+scrollbar = ttk.Scrollbar(tree_frame, orient="vertical", command=tree.yview)
+tree.configure(yscroll=scrollbar.set)
+
+scrollbar.pack(side="right", fill="y")
+tree.pack(fill="both", expand=True)
+
+# STATUS FRAME
+status_frame = tk.Frame(root, bg="#5C5470", padx=10, pady=10)
+status_frame.pack(pady=10)
+
+tk.Label(status_frame, text="Change Status:", bg="#5C5470", fg="#FAF0E6").grid(row=0, column=0, padx=5)
+
+status_combo = ttk.Combobox(status_frame, values=["To Read", "Read"], state="readonly")
+status_combo.grid(row=0, column=1, padx=5)
+
+tk.Button(status_frame, text="Update", command=update_status,
+          bg="#FAF0E6", fg="#352F44", bd=0).grid(row=0, column=2, padx=10)
+
+# INITIAL LOAD
+refresh_table()
+
+root.mainloop()

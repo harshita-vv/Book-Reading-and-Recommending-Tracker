@@ -1,0 +1,207 @@
+book_id,title,author,genre,status,ratings
+1.0,To Kill a Mockingbird,Harper Lee,Fiction,To Read,4.27
+2.0,1984,George Orwell,Dystopian,Read,4.19
+3.0,Pride and Prejudice,Jane Austen,Romance,Read,4.28
+4.0,The Great Gatsby,F. Scott Fitzgerald,Fiction,Read,3.93
+5.0,Animal Farm,George Orwell,Political Fiction,To Read,3.98
+6.0,Jane Eyre,Charlotte Brontë,Gothic Fiction,Read,4.14
+7.0,Wuthering Heights,Emily Brontë,Gothic Fiction,To Read,3.88
+8.0,The Catcher in the Rye,J.D. Salinger,Fiction,To Read,3.81
+9.0,Brave New World,Aldous Huxley,Dystopian,To Read,3.99
+10.0,Lord of the Flies,William Golding,Fiction,Read,3.69
+11.0,Harry Potter and the Sorcerer's Stone,J.K. Rowling,Fantasy,To Read,4.47
+12.0,The Hobbit,J.R.R. Tolkien,Fantasy,Read,4.28
+13.0,The Fellowship of the Ring,J.R.R. Tolkien,Fantasy,To Read,4.36
+14.0,The Two Towers,J.R.R. Tolkien,Fantasy,To Read,4.44
+15.0,The Return of the King,J.R.R. Tolkien,Fantasy,To Read,4.52
+16.0,Harry Potter and the Chamber of Secrets,J.K. Rowling,Fantasy,To Read,4.42
+17.0,Harry Potter and the Prisoner of Azkaban,J.K. Rowling,Fantasy,Read,4.58
+18.0,Harry Potter and the Goblet of Fire,J.K. Rowling,Fantasy,To Read,4.56
+19.0,Harry Potter and the Order of the Phoenix,J.K. Rowling,Fantasy,Read,4.49
+20.0,Harry Potter and the Half-Blood Prince,J.K. Rowling,Fantasy,Read,4.57
+21.0,Harry Potter and the Deathly Hallows,J.K. Rowling,Fantasy,To Read,4.62
+22.0,A Game of Thrones,George R.R. Martin,Fantasy,To Read,4.44
+23.0,The Name of the Wind,Patrick Rothfuss,Fantasy,Read,4.52
+24.0,The Way of Kings,Brandon Sanderson,Fantasy,Read,4.64
+25.0,Mistborn: The Final Empire,Brandon Sanderson,Fantasy,Read,4.43
+26.0,Dune,Frank Herbert,Science Fiction,To Read,4.25
+27.0,The Hitchhiker's Guide to the Galaxy,Douglas Adams,Science Fiction,To Read,4.22
+28.0,Ender's Game,Orson Scott Card,Science Fiction,Read,4.3
+29.0,Foundation,Isaac Asimov,Science Fiction,To Read,4.13
+30.0,Fahrenheit 451,Ray Bradbury,Science Fiction,To Read,3.98
+31.0,The Martian,Andy Weir,Science Fiction,Read,4.4
+32.0,Ready Player One,Ernest Cline,Science Fiction,To Read,4.25
+33.0,Neuromancer,William Gibson,Science Fiction,Read,3.88
+34.0,The Left Hand of Darkness,Ursula K. Le Guin,Science Fiction,Read,4.06
+35.0,Do Androids Dream of Electric Sheep?,Philip K. Dick,Science Fiction,Read,4.08
+36.0,The Girl with the Dragon Tattoo,Stieg Larsson,Mystery,To Read,4.14
+37.0,Gone Girl,Gillian Flynn,Thriller,Read,4.05
+38.0,The Da Vinci Code,Dan Brown,Thriller,To Read,3.89
+39.0,And Then There Were None,Agatha Christie,Mystery,Read,4.27
+40.0,Murder on the Orient Express,Agatha Christie,Mystery,To Read,4.2
+41.0,The Hound of the Baskervilles,Arthur Conan Doyle,Mystery,Read,4.21
+42.0,Big Little Lies,Liane Moriarty,Mystery,Read,4.14
+43.0,The Silent Patient,Alex Michaelides,Thriller,To Read,4.06
+44.0,The Woman in the Window,A.J. Finn,Thriller,To Read,3.82
+45.0,Sharp Objects,Gillian Flynn,Thriller,To Read,4.0
+46.0,The Notebook,Nicholas Sparks,Romance,To Read,4.15
+47.0,Me Before You,Jojo Moyes,Romance,Read,4.26
+48.0,Outlander,Diana Gabaldon,Romance,To Read,4.25
+49.0,The Time Traveler's Wife,Audrey Niffenegger,Romance,To Read,3.98
+50.0,Eleanor & Park,Rainbow Rowell,Romance,To Read,3.97
+51.0,The Book Thief,Markus Zusak,Historical Fiction,Read,4.37
+52.0,All the Light We Cannot See,Anthony Doerr,Historical Fiction,Read,4.32
+53.0,The Nightingale,Kristin Hannah,Historical Fiction,Read,4.55
+54.0,The Pillars of the Earth,Ken Follett,Historical Fiction,Read,4.33
+55.0,The Help,Kathryn Stockett,Historical Fiction,To Read,4.45
+56.0,Memoirs of a Geisha,Arthur Golden,Historical Fiction,Read,4.14
+57.0,The Kite Runner,Khaled Hosseini,Historical Fiction,Read,4.31
+58.0,A Thousand Splendid Suns,Khaled Hosseini,Historical Fiction,Read,4.4
+59.0,The Boy in the Striped Pajamas,John Boyne,Historical Fiction,Read,4.15
+60.0,Wolf Hall,Hilary Mantel,Historical Fiction,To Read,3.93
+61.0,Sapiens,Yuval Noah Harari,Non-Fiction,To Read,4.39
+62.0,Educated,Tara Westover,Memoir,To Read,4.49
+63.0,Becoming,Michelle Obama,Memoir,To Read,4.53
+64.0,The Immortal Life of Henrietta Lacks,Rebecca Skloot,Non-Fiction,Read,4.07
+65.0,"Thinking, Fast and Slow",Daniel Kahneman,Non-Fiction,Read,4.17
+66.0,The Power of Habit,Charles Duhigg,Non-Fiction,Read,4.13
+67.0,Atomic Habits,James Clear,Self-Help,To Read,4.37
+68.0,The Subtle Art of Not Giving a F*ck,Mark Manson,Self-Help,Read,3.91
+69.0,Born a Crime,Trevor Noah,Memoir,To Read,4.46
+70.0,When Breath Becomes Air,Paul Kalanithi,Memoir,To Read,4.35
+71.0,The Hunger Games,Suzanne Collins,Young Adult,To Read,4.32
+72.0,Catching Fire,Suzanne Collins,Young Adult,Read,4.3
+73.0,Mockingjay,Suzanne Collins,Young Adult,Read,4.03
+74.0,Divergent,Veronica Roth,Young Adult,Read,4.15
+75.0,The Fault in Our Stars,John Green,Young Adult,To Read,4.2
+76.0,Twilight,Stephenie Meyer,Young Adult,To Read,3.62
+77.0,The Maze Runner,James Dashner,Young Adult,Read,4.03
+78.0,The Perks of Being a Wallflower,Stephen Chbosky,Young Adult,To Read,4.21
+79.0,Looking for Alaska,John Green,Young Adult,Read,4.0
+80.0,Thirteen Reasons Why,Jay Asher,Young Adult,Read,3.86
+81.0,Moby-Dick,Herman Melville,Fiction,Read,3.51
+82.0,The Adventures of Huckleberry Finn,Mark Twain,Fiction,To Read,3.82
+83.0,Crime and Punishment,Fyodor Dostoevsky,Fiction,Read,4.22
+84.0,The Brothers Karamazov,Fyodor Dostoevsky,Fiction,To Read,4.33
+85.0,War and Peace,Leo Tolstoy,Fiction,To Read,4.12
+86.0,Anna Karenina,Leo Tolstoy,Fiction,Read,4.06
+87.0,The Picture of Dorian Gray,Oscar Wilde,Fiction,Read,4.11
+88.0,Frankenstein,Mary Shelley,Gothic Fiction,Read,3.83
+89.0,Dracula,Bram Stoker,Gothic Fiction,Read,4.01
+90.0,The Count of Monte Cristo,Alexandre Dumas,Fiction,To Read,4.26
+91.0,The Alchemist,Paulo Coelho,Fiction,To Read,3.9
+92.0,Life of Pi,Yann Martel,Fiction,Read,3.91
+93.0,The Road,Cormac McCarthy,Fiction,To Read,3.97
+94.0,The Lovely Bones,Alice Sebold,Fiction,To Read,3.84
+95.0,The Curious Incident of the Dog in the Night-Time,Mark Haddon,Fiction,To Read,3.87
+96.0,The Secret Life of Bees,Sue Monk Kidd,Fiction,To Read,4.07
+97.0,Water for Elephants,Sara Gruen,Fiction,To Read,4.09
+98.0,The Goldfinch,Donna Tartt,Fiction,Read,3.9
+99.0,A Little Life,Hanya Yanagihara,Fiction,To Read,4.33
+100.0,Normal People,Sally Rooney,Fiction,Read,3.94
+101.0,"The Lion, the Witch and the Wardrobe",C.S. Lewis,Fantasy,Read,4.22
+102.0,The Chronicles of Narnia,C.S. Lewis,Fantasy,Read,4.26
+103.0,American Gods,Neil Gaiman,Fantasy,Read,4.11
+104.0,Good Omens,Terry Pratchett & Neil Gaiman,Fantasy,To Read,4.25
+105.0,The Color of Magic,Terry Pratchett,Fantasy,To Read,3.98
+106.0,Stardust,Neil Gaiman,Fantasy,Read,4.03
+107.0,The Night Circus,Erin Morgenstern,Fantasy,Read,4.03
+108.0,Circe,Madeline Miller,Fantasy,Read,4.3
+109.0,The Song of Achilles,Madeline Miller,Fantasy,Read,4.38
+110.0,Six of Crows,Leigh Bardugo,Fantasy,Read,4.48
+111.0,The Shining,Stephen King,Horror,To Read,4.23
+112.0,It,Stephen King,Horror,Read,4.25
+113.0,The Stand,Stephen King,Horror,To Read,4.34
+114.0,Pet Sematary,Stephen King,Horror,Read,4.02
+115.0,Carrie,Stephen King,Horror,To Read,3.96
+116.0,The Haunting of Hill House,Shirley Jackson,Horror,To Read,3.95
+117.0,Mexican Gothic,Silvia Moreno-Garcia,Horror,Read,3.85
+118.0,The Exorcist,William Peter Blatty,Horror,To Read,4.22
+119.0,House of Leaves,Mark Z. Danielewski,Horror,To Read,4.06
+120.0,Bird Box,Josh Malerman,Horror,Read,3.88
+121.0,The Time Machine,H.G. Wells,Science Fiction,To Read,3.89
+122.0,War of the Worlds,H.G. Wells,Science Fiction,To Read,3.81
+123.0,2001: A Space Odyssey,Arthur C. Clarke,Science Fiction,Read,4.13
+124.0,Childhood's End,Arthur C. Clarke,Science Fiction,Read,4.04
+125.0,Slaughterhouse-Five,Kurt Vonnegut,Science Fiction,To Read,4.08
+126.0,The Handmaid's Tale,Margaret Atwood,Dystopian,To Read,4.12
+127.0,Oryx and Crake,Margaret Atwood,Science Fiction,Read,4.0
+128.0,Snow Crash,Neal Stephenson,Science Fiction,Read,4.02
+129.0,The Three-Body Problem,Liu Cixin,Science Fiction,To Read,4.03
+130.0,Project Hail Mary,Andy Weir,Science Fiction,To Read,4.52
+131.0,One Hundred Years of Solitude,Gabriel García Márquez,Literary Fiction,To Read,4.09
+132.0,Love in the Time of Cholera,Gabriel García Márquez,Literary Fiction,To Read,3.99
+133.0,The Catcher in the Rye,J.D. Salinger,Literary Fiction,To Read,3.81
+134.0,Beloved,Toni Morrison,Literary Fiction,Read,3.86
+135.0,The Color Purple,Alice Walker,Literary Fiction,To Read,4.24
+136.0,Catch-22,Joseph Heller,Literary Fiction,To Read,3.98
+137.0,The Grapes of Wrath,John Steinbeck,Literary Fiction,To Read,3.99
+138.0,Of Mice and Men,John Steinbeck,Literary Fiction,Read,3.88
+139.0,East of Eden,John Steinbeck,Literary Fiction,To Read,4.4
+140.0,The Old Man and the Sea,Ernest Hemingway,Literary Fiction,Read,3.79
+141.0,Where the Crawdads Sing,Delia Owens,Fiction,Read,4.46
+142.0,The Seven Husbands of Evelyn Hugo,Taylor Jenkins Reid,Fiction,To Read,4.4
+143.0,Daisy Jones & The Six,Taylor Jenkins Reid,Fiction,To Read,4.21
+144.0,The Midnight Library,Matt Haig,Fiction,Read,4.17
+145.0,Anxious People,Fredrik Backman,Fiction,Read,4.2
+146.0,A Man Called Ove,Fredrik Backman,Fiction,Read,4.35
+147.0,The Giver,Lois Lowry,Young Adult,Read,4.13
+148.0,Holes,Louis Sachar,Young Adult,Read,3.98
+149.0,The Outsiders,S.E. Hinton,Young Adult,To Read,4.11
+150.0,Wonder,R.J. Palacio,Young Adult,To Read,4.41
+151.0,The Girl on the Train,Paula Hawkins,Thriller,To Read,3.92
+152.0,In the Woods,Tana French,Mystery,To Read,4.02
+153.0,The Snowman,Jo Nesbø,Thriller,Read,4.08
+154.0,The Cuckoo's Calling,Robert Galbraith,Mystery,To Read,3.92
+155.0,The No. 1 Ladies' Detective Agency,Alexander McCall Smith,Mystery,To Read,3.87
+156.0,The Maltese Falcon,Dashiell Hammett,Mystery,To Read,3.96
+157.0,The Big Sleep,Raymond Chandler,Mystery,To Read,3.94
+158.0,Rebecca,Daphne du Maurier,Gothic Fiction,To Read,4.23
+159.0,The Talented Mr. Ripley,Patricia Highsmith,Thriller,To Read,3.91
+160.0,Verity,Colleen Hoover,Thriller,To Read,4.28
+161.0,The Diary of a Young Girl,Anne Frank,Memoir,To Read,4.18
+162.0,Into the Wild,Jon Krakauer,Non-Fiction,To Read,3.99
+163.0,Into Thin Air,Jon Krakauer,Non-Fiction,Read,4.2
+164.0,Unbroken,Laura Hillenbrand,Non-Fiction,To Read,4.39
+165.0,The Glass Castle,Jeannette Walls,Memoir,To Read,4.28
+166.0,Wild,Cheryl Strayed,Memoir,Read,3.99
+167.0,"Eat, Pray, Love",Elizabeth Gilbert,Memoir,Read,3.58
+168.0,The Devil in the White City,Erik Larson,Non-Fiction,To Read,3.98
+169.0,In Cold Blood,Truman Capote,Non-Fiction,To Read,4.08
+170.0,A Brief History of Time,Stephen Hawking,Non-Fiction,Read,4.21
+171.0,It Ends with Us,Colleen Hoover,Romance,To Read,4.26
+172.0,The Hating Game,Sally Thorne,Romance,Read,4.05
+173.0,"Red, White & Royal Blue",Casey McQuiston,Romance,Read,4.21
+174.0,Beach Read,Emily Henry,Romance,To Read,4.05
+175.0,People We Meet on Vacation,Emily Henry,Romance,To Read,4.08
+176.0,The Kiss Quotient,Helen Hoang,Romance,To Read,4.06
+177.0,The Rosie Project,Graeme Simsion,Romance,Read,4.03
+178.0,Bridget Jones's Diary,Helen Fielding,Romance,Read,3.8
+179.0,Sense and Sensibility,Jane Austen,Romance,Read,4.07
+180.0,Emma,Jane Austen,Romance,Read,4.04
+181.0,The Shadow of the Wind,Carlos Ruiz Zafón,Fiction,Read,4.26
+182.0,The Little Prince,Antoine de Saint-Exupéry,Fiction,To Read,4.31
+183.0,Charlotte's Web,E.B. White,Children's,To Read,4.18
+184.0,Matilda,Roald Dahl,Children's,To Read,4.32
+185.0,Charlie and the Chocolate Factory,Roald Dahl,Children's,Read,4.15
+186.0,The BFG,Roald Dahl,Children's,Read,4.11
+187.0,James and the Giant Peach,Roald Dahl,Children's,To Read,3.96
+188.0,A Wrinkle in Time,Madeleine L'Engle,Young Adult,To Read,3.99
+189.0,The Secret Garden,Frances Hodgson Burnett,Children's,To Read,4.15
+190.0,Anne of Green Gables,L.M. Montgomery,Children's,To Read,4.28
+191.0,Little Women,Louisa May Alcott,Fiction,Read,4.13
+192.0,The Adventures of Tom Sawyer,Mark Twain,Fiction,To Read,3.92
+193.0,Treasure Island,Robert Louis Stevenson,Adventure,Read,3.83
+194.0,The Strange Case of Dr. Jekyll and Mr. Hyde,Robert Louis Stevenson,Gothic Fiction,To Read,3.82
+195.0,Around the World in Eighty Days,Jules Verne,Adventure,Read,3.85
+196.0,Twenty Thousand Leagues Under the Sea,Jules Verne,Adventure,Read,3.84
+197.0,Journey to the Center of the Earth,Jules Verne,Adventure,To Read,3.87
+198.0,The Three Musketeers,Alexandre Dumas,Adventure,To Read,4.06
+199.0,Robinson Crusoe,Daniel Defoe,Adventure,Read,3.7
+200.0,Gulliver's Travels,Jonathan Swift,Adventure,To Read,3.58
+,Ikigai,Hector Garcia,Literary Fiction,To Read,
+,1984,George Orwell,Dystopian,Read,
+,Diary of a Wimpy Kid,Jeff Kiney,Children's,Read,
+,Metamorphosis,Franz Kafka,Self-Help,To Read,
+,Rich dad Poor dad,Robert Kiyosaki,Non-Fiction,Read,
+,Flesh,David Szalay,Young Adult,To Read,
